@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: backend-abhishek
+    env: node
+    plan: free
+    branch: main
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
